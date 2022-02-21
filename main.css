@@ -1,0 +1,34 @@
+.container {
+    display: flex;
+}
+
+#products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 400px;
+    height: 400px;
+    margin: 0px 20px 40px;
+}
+
+select {
+    display: block;
+}
+
+@media only screen and (max-width: 1000px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .filter-container {
+        text-align: center;
+    }
+
+    select {
+        margin-left: auto;
+        margin-right: auto;
+    };
+}
